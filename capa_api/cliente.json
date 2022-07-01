@@ -1,0 +1,124 @@
+{
+    "tb_cliente": [{
+            "doc": "00000000001",
+            "nombre": "alex1",
+            "operación": "12345",
+            "credito": "2",
+            "dia_mora": "12",
+            "moneda": "usd",
+            "tot_cliente": "1111",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000002",
+            "nombre": "alex2",
+            "operación": "12346",
+            "credito": "3",
+            "dia_mora": "14",
+            "moneda": "usd",
+            "tot_cliente": "54848",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000003",
+            "nombre": "alex3",
+            "operación": "12347",
+            "credito": "4",
+            "dia_mora": "11",
+            "moneda": "usd",
+            "tot_cliente": "5551",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000004",
+            "nombre": "alex4",
+            "operación": "12348",
+            "credito": "2",
+            "dia_mora": "5",
+            "moneda": "usd",
+            "tot_cliente": "161141",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000005",
+            "nombre": "alex5",
+            "operación": "12349",
+            "credito": "3",
+            "dia_mora": "10",
+            "moneda": "usd",
+            "tot_cliente": "1555",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000006",
+            "nombre": "alex6",
+            "operación": "12350",
+            "credito": "4",
+            "dia_mora": "11",
+            "moneda": "usd",
+            "tot_cliente": "2848",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000007",
+            "nombre": "alex7",
+            "operación": "12351",
+            "credito": "2",
+            "dia_mora": "5",
+            "moneda": "usd",
+            "tot_cliente": "1151",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000008",
+            "nombre": "alex8",
+            "operación": "12352",
+            "credito": "3",
+            "dia_mora": "6",
+            "moneda": "usd",
+            "tot_cliente": "98544",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000009",
+            "nombre": "alex9",
+            "operación": "12353",
+            "credito": "4",
+            "dia_mora": "11",
+            "moneda": "usd",
+            "tot_cliente": "74511",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000010",
+            "nombre": "alex10",
+            "operación": "12354",
+            "credito": "2",
+            "dia_mora": "12",
+            "moneda": "usd",
+            "tot_cliente": "85848",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        },
+        {
+            "doc": "00000000011",
+            "nombre": "alex11",
+            "operación": "12355",
+            "credito": "3",
+            "dia_mora": "7",
+            "moneda": "usd",
+            "tot_cliente": "111",
+            "ultima_gestion": "27/06/2022",
+            "mayor_tramo_hora": "DE 11 A 15 DIAS"
+        }
+    ]
+}
