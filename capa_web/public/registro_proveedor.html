@@ -443,7 +443,7 @@
                         <h3 class="page-title">
                             <span class="page-title-icon bg-gradient-primary text-white mr-2">
 			                  <i class="la la-table"></i>
-			                </span> CLIENTES</h3>
+			                </span> REGISTRO USUARIOS</h3>
                     </div>
                     <div class="col p-0 text-right">
                         <ul class="breadcrumb bg-white float-right m-0 pl-0 pr-0">
@@ -454,399 +454,300 @@
                 </div>
                 <!-- /Page Header -->
 
-                <div class="row">
-
-                    <div class="col-sm-9">
-                        <div class="card mb-0">
-
-                            <div class="container">
-                                <div class="row texttallsmart">
-                                    <div class="col-sm-5">
-                                        RAZON SOCIAL/NOMBRE DEUDOR<br><input type="text">
-                                    </div>
-                                    <div class="col-sm-5">
-                                        RAZON SOCIAL/NOMBRE DEUDOR<br><input type="text">
-                                    </div>
-                                    <div class="col-sm-2 align-self-center">
-                                        <input type="button" class="btn btn-primary" value="Buscar">
-                                    </div>
-                                </div>
-                                <div class="card-header">
-                                </div>
-                                <h4 class="card-title mb-0 texttallsmart">Filtros avanzados</h4>
-                                <div class="container texttallsmart">
-                                    <div class="row">
-                                        <div class="col-sm">Resultado de gestion</div>
-                                        <div class="col-sm">Estatus cartera</div>
-                                        <div class="col-sm">Estatus pago</div>
-                                        <div class="col-sm">Tramo de mora</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                    </div>
-                                </div>
-                                <div class="card-body">
-                                    <div class="table-responsive">
-                                        <table name="dtClientes" id="dtClientes" class="datatable table table-stripped mb-0 datatables">
-                                            <thead>
-                                                <tr>
-                                                    <th class="texttallsmart">RUC/DOC</th>
-                                                    <th class="texttallsmart">NOMBRE</th>
-                                                    <th class="texttallsmart">OPERACION</th>
-                                                    <th class="texttallsmart">CREDITOS.ACTIVOS</th>
-                                                    <th class="texttallsmart">DIAS.MORA</th>
-                                                    <th class="texttallsmart">MONEDA</th>
-                                                    <th class="texttallsmart">TOTAL.CLIENTE</th>
-                                                    <th class="texttallsmart">ULTIMA.GESTION</th>
-                                                    <th class="texttallsmart">>TRAMO.MORA</th>
-                                                </tr>
-                                            </thead>
-                                        </table>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col">
+                    <div class="row">
+                        <div class="col-sm-6">Nombre:</div>
+                        <div class="col-sm-6"><input type="text" name="" id=""></div>
                     </div>
-                    <div class="col-sm-3">
-                        <div class="container">
-                            <table name="dtAgenda" id="dtAgenda" class="datatable table table-stripped mb-0 datatables">
-                                <thead>
-                                    <tr>
-                                        <th>DOCUMENTO</th>
-                                        <th>FECHA</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Tipo:</div>
+                        <div class="col-sm-6"><select name="" id=""></select> </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Tipo de Doc.:</div>
+                        <div class="col-sm-6"><input type="text" name="" id=""></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Nro Documento.:</div>
+                        <div class="col-sm-6"><input type="text" name="" id=""></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Telefono:</div>
+                        <div class="col-sm-6"><input type="text" name="" id=""></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Departamento:</div>
+                        <div class="col-sm-6"><select name="" id=""></select></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Provincia:</div>
+                        <div class="col-sm-6"><select name="" id=""></select></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Distrito:</div>
+                        <div class="col-sm-6"><select name="" id=""></select></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Contacto:</div>
+                        <div class="col-sm-6"><input type="text" name="" id=""></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Observacion:</div>
+                        <div class="col-sm-6"><input type="text" name="" id=""></div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-6">Estado:</div>
+                        <div class="col-sm-6"><select name="" id=""></select></div>
                     </div>
                 </div>
+                <div class="col">
+                    <input type="button" value="Actualizar">
+                    <input type="button" value="Regresar">
+                </div>
             </div>
-            <!-- /Page Wrapper -->
-
         </div>
+        <!-- /Page Wrapper -->
 
-        <script type="text/javascript">
-            $(document).ready(function() {
-                var tablecliente = $('#dtClientes').DataTable({
-                    "bDestroy": true,
-                    //"paging": false,
-                    "searching": false,
-                    language: {
-                        "decimal": "",
-                        "emptyTable": "No hay informacion",
-                        "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                        "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                        "infoFiltered": "(Filtrado de _MAX_ total entradas)",
-                        "infoPostFix": "",
-                        "thousands": ",",
-                        "lengthMenu": "Mostrar _MENU_ Entradas",
-                        "loadingRecords": "Cargando...",
-                        "processing": "Procesando...",
-                        "search": "Buscar:",
-                        "zeroRecords": "Sin resultados encontrados",
-                        "paginate": {
-                            "first": "Primera página",
-                            "last": "Ultima página",
-                            "next": "Siguiente",
-                            "previous": "Anterior"
-                        }
-                    },
-                    "searching": false,
-                    "ajax": {
-                        "url": "http://localhost:81/trabajo/capa_api/cliente.json",
-                        /*"url": "http://192.168.0.180:81/trabajo/capa_api/cliente.json",*/
-                        "type": "GET",
-                        "dataSrc": "tb_cliente",
+    </div>
 
-                    },
-                    "columns": [{
-                        "data": function(data, type, dataToSet) {
-                            return '<a href="">' + data.doc + '</a>';
-                        }
-                    }, {
-                        "data": "nombre"
-                    }, {
-                        "data": "operación"
-                    }, {
-                        "data": "credito"
-                    }, {
-                        "data": "dia_mora"
-                    }, {
-                        "data": "moneda"
-                    }, {
-                        "data": "tot_cliente"
-                    }, {
-                        "data": "ultima_gestion"
-                    }, {
-                        "data": "mayor_tramo_hora"
-                    }],
-                    "createdRow": function(row, data, dataIndex) {
-                        if (dataIndex % 2 == 0) {
-
-                        } else {
-                            $(row).css('background-color', '#A2CADF');
-                        }
+    <script type="text/javascript">
+        $(document).ready(function() {
+            var tableusuario = $('#dtUsuarios').DataTable({
+                "bDestroy": true,
+                //"paging": false,
+                "searching": false,
+                language: {
+                    "decimal": "",
+                    "emptyTable": "No hay informacion",
+                    "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
+                    "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
+                    "infoFiltered": "(Filtrado de _MAX_ total entradas)",
+                    "infoPostFix": "",
+                    "thousands": ",",
+                    "lengthMenu": "Mostrar _MENU_ Entradas",
+                    "loadingRecords": "Cargando...",
+                    "processing": "Procesando...",
+                    "search": "Buscar:",
+                    "zeroRecords": "Sin resultados encontrados",
+                    "paginate": {
+                        "first": "Primera página",
+                        "last": "Ultima página",
+                        "next": "Siguiente",
+                        "previous": "Anterior"
                     }
-                });
-                $('#container').css('display', 'block');
-                tablecliente.columns.adjust().draw();
-                var tableagendado = $('#dtAgenda').DataTable({
-                    "bDestroy": true,
-                    "paging": false,
-                    "searching": false,
-                    language: {
-                        "decimal": "",
-                        "emptyTable": "No hay informacion",
-                        "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                        "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                        "infoFiltered": "(Filtrado de _MAX_ total entradas)",
-                        "infoPostFix": "",
-                        "thousands": ",",
-                        "lengthMenu": "Mostrar _MENU_ Entradas",
-                        "loadingRecords": "Cargando...",
-                        "processing": "Procesando...",
-                        "search": "Buscar:",
-                        "zeroRecords": "Sin resultados encontrados",
-                        "paginate": {
-                            "first": "Primero",
-                            "last": "Ultimo",
-                            "next": "Siguiente",
-                            "previous": "Anterior"
-                        }
-                    },
-                    "searching": false,
-                    "ajax": {
-                        "url": "http://localhost:81/trabajo/capa_api/agendado.json",
-                        /*"url": "http://192.168.0.180:81/trabajo/capa_api/agendado.json",*/
-                        "type": "GET",
-                        "dataSrc": "tb_agendado",
-
-                    },
-                    "columns": [{
-                        "data": function(data, type, dataToSet) {
-                            return '<a href="">' + data.documento + '</a>';
-                        }
-                    }, {
-                        "data": "fecha"
-                    }],
-                    "createdRow": function(row, data, dataIndex) {
-                        if (data.fecha == "25/06/2022") {
-                            $(row).css('background-color', '#F39B9B');
-                        } else if (data.fecha == "26/06/2022") {
-                            $(row).css('background-color', '#FFD700');
-                        } else {
-                            $(row).css('background-color', '#9EF395');
-                        }
-
-                    }
-                });
-
-
+                },
+                "searching": false,
             });
-        </script>
+        });
+    </script>
 
 
 
-        <!--theme settings modal-->
+    <!--theme settings modal-->
 
-        <div class="modal right fade settings" id="settings" role="dialog" aria-modal="true">
-            <div class="toggle-close">
-                <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+    <div class="modal right fade settings" id="settings" role="dialog" aria-modal="true">
+        <div class="toggle-close">
+            <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </div>
+
+        </div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header p-3">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2">Settings</h4>
                 </div>
 
-            </div>
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <div class="modal-body pb-3">
+                    <div class="scroll">
 
-                    <div class="modal-header p-3">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel2">Settings</h4>
-                    </div>
-
-                    <div class="modal-body pb-3">
-                        <div class="scroll">
-
-                            <div>
+                        <div>
 
 
 
 
-                                <ul class="list-group">
-                                    <li class="list-group-item border-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="pb-2">Primary Skin</h5>
-                                            </div>
-                                            <div class="col text-right">
-                                                <a class="reset text-white bg-dark" id="ChangeprimaryDefault">Reset Default</a>
-                                            </div>
+                            <ul class="list-group">
+                                <li class="list-group-item border-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="pb-2">Primary Skin</h5>
                                         </div>
-                                        <div class="theme-settings-swatches">
-                                            <div class="themes">
-                                                <div class="themes-body">
-                                                    <ul id="theme-change" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
-                                                        <li class="theme-title">Solid Color</li>
-                                                        <li class="list-inline-item"><span class="theme-solid-black bg-black"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-solid-pink bg-primary"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-solid-orange bg-secondary1"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-solid-purple bg-success"></span></li>
-                                                        <!-- <li class="list-inline-item"><span class="theme-solid-blue bg-info"></span></li> -->
-                                                        <li class="list-inline-item"><span class="theme-solid-green bg-warnings"></span></li>
-                                                        <li><br /></li>
-                                                        <li>
-                                                            <hr />
-                                                        </li>
-
-                                                        <li class="theme-title">Gradient Color</li>
-
-
-                                                        <li class="list-inline-item"><span class="theme-orange bg-sunny-morning"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-blue bg-tempting-azure"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-grey bg-amy-crisp"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-lgrey bg-mean-fruit"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-dblue bg-malibu-beach"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-pink bg-ripe-malin"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-purple bg-plum-plate"></span></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-
+                                        <div class="col text-right">
+                                            <a class="reset text-white bg-dark" id="ChangeprimaryDefault">Reset Default</a>
                                         </div>
-                                    </li>
-                                </ul>
-                            </div>
-
-                            <div>
-                                <ul class="list-group">
-                                    <li class="list-group-item border-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="pb-2">Header Style</h5>
-                                            </div>
-                                            <div class="col text-right">
-                                                <a class="reset text-white bg-dark" id="ChageheaderDefault">Reset Default</a>
-                                            </div>
-                                        </div>
-                                        <div class="theme-settings-swatches">
-                                            <div class="themes">
-                                                <div class="themes-body">
-                                                    <ul id="theme-change1" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
-                                                        <li class="theme-title">Solid Color</li>
-                                                        <li class="list-inline-item"><span class="header-solid-black bg-black"></span></li>
-                                                        <li class="list-inline-item"><span class="header-solid-pink bg-primary"></span></li>
-                                                        <li class="list-inline-item"><span class="header-solid-orange bg-secondary1"></span></li>
-                                                        <li class="list-inline-item"><span class="header-solid-purple bg-success"></span></li>
-                                                        <!-- <li class="list-inline-item"><span class="header-solid-blue bg-info"></span></li> -->
-                                                        <li class="list-inline-item"><span class="header-solid-green bg-warnings"></span></li>
-                                                        <li><br /></li>
-                                                        <li>
-                                                            <hr />
-                                                        </li>
-
-                                                        <li class="theme-title">Gradient Color</li>
-
-                                                        <li class="list-inline-item"><span class="header-gradient-color1 bg-sunny-morning"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color2 bg-tempting-azure"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color3 bg-amy-crisp"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color4 bg-mean-fruit"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color5 bg-malibu-beach"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color6 bg-ripe-malin"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color7 bg-plum-plate"></span></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                </ul>
-                            </div>
-                            <div>
-                                <ul class="list-group m-0">
-                                    <li class="list-group-item border-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="pb-2">Apps Sidebar Style</h5>
-                                            </div>
-                                            <div class="col  text-right">
-                                                <a class="reset text-white bg-dark" id="ChagesidebarDefault">Reset Default</a>
-                                            </div>
-                                        </div>
-                                        <div class="theme-settings-swatches">
-                                            <div class="themes">
-                                                <div class="themes-body">
-                                                    <ul id="theme-change2" class="theme-colors border-0 list-inline-item list-unstyled">
-                                                        <li class="theme-title">Solid Color</li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-black bg-black"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-pink bg-primary"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-orange bg-secondary1"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-purple bg-success"></span></li>
-                                                        <!-- <li class="list-inline-item"><span class="sidebar-solid-blue bg-info"></span></li> -->
-                                                        <li class="list-inline-item"><span class="sidebar-solid-green bg-warnings"></span></li>
-                                                        <li><br /></li>
-                                                        <li>
-                                                            <hr />
-                                                        </li>
-
-                                                        <li class="theme-title">Gradient Color</li>
-
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color1 bg-sunny-morning"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color2 bg-tempting-azure"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color3 bg-amy-crisp"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color4 bg-mean-fruit"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color5 bg-malibu-beach"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color6 bg-ripe-malin"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color7 bg-plum-plate"></span></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="row Default-font">
-                                    <div class="col">
-                                        <h5 class="pb-2">Font Style</h5>
                                     </div>
-                                    <div class="col text-right">
-                                        <a class="reset text-white bg-dark font-Default" onclick="ChangeFontDefault()">Reset Default</a>
+                                    <div class="theme-settings-swatches">
+                                        <div class="themes">
+                                            <div class="themes-body">
+                                                <ul id="theme-change" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
+                                                    <li class="theme-title">Solid Color</li>
+                                                    <li class="list-inline-item"><span class="theme-solid-black bg-black"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-solid-pink bg-primary"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-solid-orange bg-secondary1"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-solid-purple bg-success"></span></li>
+                                                    <!-- <li class="list-inline-item"><span class="theme-solid-blue bg-info"></span></li> -->
+                                                    <li class="list-inline-item"><span class="theme-solid-green bg-warnings"></span></li>
+                                                    <li><br /></li>
+                                                    <li>
+                                                        <hr />
+                                                    </li>
+
+                                                    <li class="theme-title">Gradient Color</li>
+
+
+                                                    <li class="list-inline-item"><span class="theme-orange bg-sunny-morning"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-blue bg-tempting-azure"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-grey bg-amy-crisp"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-lgrey bg-mean-fruit"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-dblue bg-malibu-beach"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-pink bg-ripe-malin"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-purple bg-plum-plate"></span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
                                     </div>
-                                </div>
-                                <ul class="list-inline-item list-unstyled font-family border-0 p-0">
-
-                                    <li class="list-inline-item roboto-font" onclick="changeFonts1();">Roboto</li>
-                                    <li class="list-inline-item poppins-font" onclick="changeFonts2();">Poppins</li>
-                                    <li class="list-inline-item montserrat-font" onclick="changeFonts3();">Montserrat</li>
-                                    <li class="list-inline-item inter-font" onclick="changeFonts4();">Inter</li>
-                                </ul>
-                            </div>
-
+                                </li>
+                            </ul>
                         </div>
-                    </div>
 
+                        <div>
+                            <ul class="list-group">
+                                <li class="list-group-item border-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="pb-2">Header Style</h5>
+                                        </div>
+                                        <div class="col text-right">
+                                            <a class="reset text-white bg-dark" id="ChageheaderDefault">Reset Default</a>
+                                        </div>
+                                    </div>
+                                    <div class="theme-settings-swatches">
+                                        <div class="themes">
+                                            <div class="themes-body">
+                                                <ul id="theme-change1" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
+                                                    <li class="theme-title">Solid Color</li>
+                                                    <li class="list-inline-item"><span class="header-solid-black bg-black"></span></li>
+                                                    <li class="list-inline-item"><span class="header-solid-pink bg-primary"></span></li>
+                                                    <li class="list-inline-item"><span class="header-solid-orange bg-secondary1"></span></li>
+                                                    <li class="list-inline-item"><span class="header-solid-purple bg-success"></span></li>
+                                                    <!-- <li class="list-inline-item"><span class="header-solid-blue bg-info"></span></li> -->
+                                                    <li class="list-inline-item"><span class="header-solid-green bg-warnings"></span></li>
+                                                    <li><br /></li>
+                                                    <li>
+                                                        <hr />
+                                                    </li>
+
+                                                    <li class="theme-title">Gradient Color</li>
+
+                                                    <li class="list-inline-item"><span class="header-gradient-color1 bg-sunny-morning"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color2 bg-tempting-azure"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color3 bg-amy-crisp"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color4 bg-mean-fruit"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color5 bg-malibu-beach"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color6 bg-ripe-malin"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color7 bg-plum-plate"></span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="list-group m-0">
+                                <li class="list-group-item border-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="pb-2">Apps Sidebar Style</h5>
+                                        </div>
+                                        <div class="col  text-right">
+                                            <a class="reset text-white bg-dark" id="ChagesidebarDefault">Reset Default</a>
+                                        </div>
+                                    </div>
+                                    <div class="theme-settings-swatches">
+                                        <div class="themes">
+                                            <div class="themes-body">
+                                                <ul id="theme-change2" class="theme-colors border-0 list-inline-item list-unstyled">
+                                                    <li class="theme-title">Solid Color</li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-black bg-black"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-pink bg-primary"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-orange bg-secondary1"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-purple bg-success"></span></li>
+                                                    <!-- <li class="list-inline-item"><span class="sidebar-solid-blue bg-info"></span></li> -->
+                                                    <li class="list-inline-item"><span class="sidebar-solid-green bg-warnings"></span></li>
+                                                    <li><br /></li>
+                                                    <li>
+                                                        <hr />
+                                                    </li>
+
+                                                    <li class="theme-title">Gradient Color</li>
+
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color1 bg-sunny-morning"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color2 bg-tempting-azure"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color3 bg-amy-crisp"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color4 bg-mean-fruit"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color5 bg-malibu-beach"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color6 bg-ripe-malin"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color7 bg-plum-plate"></span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="row Default-font">
+                                <div class="col">
+                                    <h5 class="pb-2">Font Style</h5>
+                                </div>
+                                <div class="col text-right">
+                                    <a class="reset text-white bg-dark font-Default" onclick="ChangeFontDefault()">Reset Default</a>
+                                </div>
+                            </div>
+                            <ul class="list-inline-item list-unstyled font-family border-0 p-0">
+
+                                <li class="list-inline-item roboto-font" onclick="changeFonts1();">Roboto</li>
+                                <li class="list-inline-item poppins-font" onclick="changeFonts2();">Poppins</li>
+                                <li class="list-inline-item montserrat-font" onclick="changeFonts3();">Montserrat</li>
+                                <li class="list-inline-item inter-font" onclick="changeFonts4();">Inter</li>
+                            </ul>
+                        </div>
+
+                    </div>
                 </div>
+
             </div>
         </div>
+    </div>
 
-        <!--theme settings-->
-        <div class="sidebar-contact">
-            <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i></div>
+    <!--theme settings-->
+    <div class="sidebar-contact">
+        <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i></div>
 
-        </div>
+    </div>
 
-        <!-- Slimscroll JS -->
+    <!-- Slimscroll JS -->
 
-        <!-- Custom JS -->
-        <script src="../src/resources/assets/js/app.js"></script>
-        <script src="../src/resources/assets/js/sticky.js"></script>
+    <!-- Custom JS -->
+    <script src="../src/resources/assets/js/app.js"></script>
+    <script src="../src/resources/assets/js/sticky.js"></script>
 </body>
 
 </html>
