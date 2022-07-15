@@ -443,7 +443,7 @@
                         <h3 class="page-title">
                             <span class="page-title-icon bg-gradient-primary text-white mr-2">
 			                  <i class="la la-table"></i>
-			                </span> CLIENTES</h3>
+			                </span> USUARIOS</h3>
                     </div>
                     <div class="col p-0 text-right">
                         <ul class="breadcrumb bg-white float-right m-0 pl-0 pr-0">
@@ -456,72 +456,30 @@
 
                 <div class="row">
 
-                    <div class="col-sm-9">
+                    <div class="col-sm-12">
                         <div class="card mb-0">
 
                             <div class="container">
-                                <div class="row texttallsmart">
-                                    <div class="col-sm-5">
-                                        RAZON SOCIAL/NOMBRE DEUDOR<br><input type="text">
-                                    </div>
-                                    <div class="col-sm-5">
-                                        RAZON SOCIAL/NOMBRE DEUDOR<br><input type="text">
-                                    </div>
-                                    <div class="col-sm-2 align-self-center">
-                                        <input type="button" class="btn btn-primary" value="Buscar">
-                                    </div>
-                                </div>
-                                <div class="card-header">
-                                </div>
-                                <h4 class="card-title mb-0 texttallsmart">Filtros avanzados</h4>
-                                <div class="container texttallsmart">
-                                    <div class="row">
-                                        <div class="col-sm">Resultado de gestion</div>
-                                        <div class="col-sm">Estatus cartera</div>
-                                        <div class="col-sm">Estatus pago</div>
-                                        <div class="col-sm">Tramo de mora</div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                        <div class="col-sm"><select><option value="TODOS">TODOS</option></select></div>
-                                    </div>
-                                </div>
+
+                                <input type="button" value="Registrar" onclick="window.location='registro_usuario.html';">
+
                                 <div class="card-body">
                                     <div class="table-responsive">
-                                        <table name="dtClientes" id="dtClientes" class="datatable table table-stripped mb-0 datatables">
+                                        <table name="dtUsuarios" id="dtUsuarios" class="datatable table table-stripped mb-0 datatables">
                                             <thead>
                                                 <tr>
-                                                    <th class="texttallsmart">RUC/DOC</th>
-                                                    <th class="texttallsmart">NOMBRE</th>
-                                                    <th class="texttallsmart">OPERACION</th>
-                                                    <th class="texttallsmart">CREDITOS.ACTIVOS</th>
-                                                    <th class="texttallsmart">DIAS.MORA</th>
-                                                    <th class="texttallsmart">MONEDA</th>
-                                                    <th class="texttallsmart">TOTAL.CLIENTE</th>
-                                                    <th class="texttallsmart">ULTIMA.GESTION</th>
-                                                    <th class="texttallsmart">>TRAMO.MORA</th>
+                                                    <th class="texttallsmart">N°</th>
+                                                    <th class="texttallsmart">ID</th>
+                                                    <th class="texttallsmart">USUARIO</th>
+                                                    <th class="texttallsmart">NOMBRES</th>
+                                                    <th class="texttallsmart">NIVEL</th>
+                                                    <th class="texttallsmart">ESTADO</th>
                                                 </tr>
                                             </thead>
                                         </table>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                    <div class="col-sm-3">
-                        <div class="container">
-                            <table name="dtAgenda" id="dtAgenda" class="datatable table table-stripped mb-0 datatables">
-                                <thead>
-                                    <tr>
-                                        <th>DOCUMENTO</th>
-                                        <th>FECHA</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
                         </div>
                     </div>
                 </div>
@@ -532,7 +490,7 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                var tablecliente = $('#dtClientes').DataTable({
+                var tableusuario = $('#dtUsuarios').DataTable({
                     "bDestroy": true,
                     //"paging": false,
                     "searching": false,
@@ -557,96 +515,7 @@
                         }
                     },
                     "searching": false,
-                    "ajax": {
-                        "url": "http://localhost:81/trabajo/capa_api/cliente.json",
-                        /*"url": "http://192.168.0.180:81/trabajo/capa_api/cliente.json",*/
-                        "type": "GET",
-                        "dataSrc": "tb_cliente",
-
-                    },
-                    "columns": [{
-                        "data": function(data, type, dataToSet) {
-                            return '<a href="">' + data.doc + '</a>';
-                        }
-                    }, {
-                        "data": "nombre"
-                    }, {
-                        "data": "operación"
-                    }, {
-                        "data": "credito"
-                    }, {
-                        "data": "dia_mora"
-                    }, {
-                        "data": "moneda"
-                    }, {
-                        "data": "tot_cliente"
-                    }, {
-                        "data": "ultima_gestion"
-                    }, {
-                        "data": "mayor_tramo_hora"
-                    }],
-                    "createdRow": function(row, data, dataIndex) {
-                        if (dataIndex % 2 == 0) {
-
-                        } else {
-                            $(row).css('background-color', '#A2CADF');
-                        }
-                    }
                 });
-                $('#container').css('display', 'block');
-                tablecliente.columns.adjust().draw();
-                var tableagendado = $('#dtAgenda').DataTable({
-                    "bDestroy": true,
-                    "paging": false,
-                    "searching": false,
-                    language: {
-                        "decimal": "",
-                        "emptyTable": "No hay informacion",
-                        "info": "Mostrando _START_ a _END_ de _TOTAL_ Entradas",
-                        "infoEmpty": "Mostrando 0 to 0 of 0 Entradas",
-                        "infoFiltered": "(Filtrado de _MAX_ total entradas)",
-                        "infoPostFix": "",
-                        "thousands": ",",
-                        "lengthMenu": "Mostrar _MENU_ Entradas",
-                        "loadingRecords": "Cargando...",
-                        "processing": "Procesando...",
-                        "search": "Buscar:",
-                        "zeroRecords": "Sin resultados encontrados",
-                        "paginate": {
-                            "first": "Primero",
-                            "last": "Ultimo",
-                            "next": "Siguiente",
-                            "previous": "Anterior"
-                        }
-                    },
-                    "searching": false,
-                    "ajax": {
-                        "url": "http://localhost:81/trabajo/capa_api/agendado.json",
-                        /*"url": "http://192.168.0.180:81/trabajo/capa_api/agendado.json",*/
-                        "type": "GET",
-                        "dataSrc": "tb_agendado",
-
-                    },
-                    "columns": [{
-                        "data": function(data, type, dataToSet) {
-                            return '<a href="">' + data.documento + '</a>';
-                        }
-                    }, {
-                        "data": "fecha"
-                    }],
-                    "createdRow": function(row, data, dataIndex) {
-                        if (data.fecha == "25/06/2022") {
-                            $(row).css('background-color', '#F39B9B');
-                        } else if (data.fecha == "26/06/2022") {
-                            $(row).css('background-color', '#FFD700');
-                        } else {
-                            $(row).css('background-color', '#9EF395');
-                        }
-
-                    }
-                });
-
-
             });
         </script>
 
