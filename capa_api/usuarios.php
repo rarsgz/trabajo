@@ -1,0 +1,1 @@
+[{"id":"1","u_nombre":"Rene Residente","u_tipo_dni":"DNI","u_dni":"44668899","u_usuario":"residente","u_clave":"residente1","u_tipo":"buen tipo","u_ucrea":"1","u_fcrea":"2022-07-20 22:33:26.978099+00","u_activo":"t","u_fingreso":"2022-07-20 22:33:22+00"}]
