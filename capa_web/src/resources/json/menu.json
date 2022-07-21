@@ -1,0 +1,55 @@
+{
+    "tb_menu": [{
+            "menu": "Administracion",
+            "submenu": "Proveedor"
+        },
+        {
+            "menu": "Administracion",
+            "submenu": "Cartera"
+        },
+        {
+            "menu": "Administracion",
+            "submenu": "Usuarios"
+        },
+        {
+            "menu": "Gestion",
+            "submenu": "Cobranza"
+        },
+        {
+            "menu": "Gestion",
+            "submenu": "Venta"
+        },
+        {
+            "menu": "Gestion",
+            "submenu": "Informacion"
+        },
+        {
+            "menu": "Proceso",
+            "submenu": "Asignar cuenta a asesor"
+        },
+        {
+            "menu": "Proceso",
+            "submenu": "Asignar cartera x resultado"
+        },
+        {
+            "menu": "Importacion",
+            "submenu": "Cartera"
+        },
+        {
+            "menu": "Importacion",
+            "submenu": "Clientes"
+        },
+        {
+            "menu": "Importacion",
+            "submenu": "Direccion"
+        },
+        {
+            "menu": "Importacion",
+            "submenu": "Telefono"
+        },
+        {
+            "menu": "Reportes",
+            "submenu": "Reportes x Periodo"
+        }
+    ]
+}
