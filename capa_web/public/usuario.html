@@ -399,32 +399,32 @@
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Gestion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Cobranza</a></li>
-                                <li><a href="projects-dashboard.html">Venta</a></li>
-                                <li><a href="projects-dashboard.html">Informacion</a></li>
+                                <li><a href="cobranza.html">Cobranza</a></li>
+                                <li><a href="venta.html">Venta</a></li>
+                                <li><a href="informacion.html">Informacion</a></li>
                             </ul>
                         </li>
 
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Proceso</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Asignar cuenta a asesor</a></li>
-                                <li><a href="projects-dashboard.html">Asignar cartera x resultado</a></li>
+                                <li><a href="cuentaxasesor.html">Asignar cuenta a asesor</a></li>
+                                <li><a href="cuentaxresultado.html">Asignar cartera x resultado</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Importacion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Cartera</a></li>
-                                <li><a href="projects-dashboard.html">Clientes</a></li>
-                                <li><a href="projects-dashboard.html">Direccion</a></li>
-                                <li><a href="projects-dashboard.html">Telefono</a></li>
+                                <li><a href="cartera.html">Cartera</a></li>
+                                <li><a href="cliente.html">Clientes</a></li>
+                                <li><a href="direccion.html">Direccion</a></li>
+                                <li><a href="telefono.html">Telefono</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Reportes</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Reportes x Periodo</a></li>
+                                <li><a href="reportexperiodo.html">Reportes x Periodo</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -476,6 +476,32 @@
                                                     <th class="texttallsmart">ESTADO</th>
                                                 </tr>
                                             </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th class="texttallsmart">1</th>
+                                                    <th class="texttallsmart">20</th>
+                                                    <th class="texttallsmart">d12345</th>
+                                                    <th class="texttallsmart">Daniel Meg</th>
+                                                    <th class="texttallsmart">1</th>
+                                                    <th class="texttallsmart">Activo</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="texttallsmart">2</th>
+                                                    <th class="texttallsmart">21</th>
+                                                    <th class="texttallsmart">d12346</th>
+                                                    <th class="texttallsmart">Erick Meg</th>
+                                                    <th class="texttallsmart">1</th>
+                                                    <th class="texttallsmart">Activo</th>
+                                                </tr>
+                                                <tr>
+                                                    <th class="texttallsmart">3</th>
+                                                    <th class="texttallsmart">22</th>
+                                                    <th class="texttallsmart">d12347</th>
+                                                    <th class="texttallsmart">Ander Meg</th>
+                                                    <th class="texttallsmart">1</th>
+                                                    <th class="texttallsmart">Inactivo</th>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -488,7 +514,7 @@
         <!-- /Page Wrapper -->
         <script type="text/javascript">
             $(document).ready(function() {
-                var tableusuario = $('#dtUsuarios').DataTable({
+                var tableusuario = $('#dtUsuarios1').DataTable({
                     "bDestroy": true,
                     //"paging": false,
                     "searching": false,
@@ -521,6 +547,8 @@
 
                     },
                     "columns": [{
+                        "data": "id"
+                    }, {
                         "data": "id"
                     }, {
                         "data": "u_usuario"

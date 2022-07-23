@@ -408,23 +408,23 @@
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Proceso</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Asignar cuenta a asesor</a></li>
-                                <li><a href="projects-dashboard.html">Asignar cartera x resultado</a></li>
+                                <li><a href="cuentaxasesor.html">Asignar cuenta a asesor</a></li>
+                                <li><a href="cuentaxresultado.html">Asignar cartera x resultado</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Importacion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Cartera</a></li>
-                                <li><a href="projects-dashboard.html">Clientes</a></li>
-                                <li><a href="projects-dashboard.html">Direccion</a></li>
-                                <li><a href="projects-dashboard.html">Telefono</a></li>
+                                <li><a href="cartera.html">Cartera</a></li>
+                                <li><a href="cliente.html">Clientes</a></li>
+                                <li><a href="direccion.html">Direccion</a></li>
+                                <li><a href="telefono.html">Telefono</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Reportes</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Reportes x Periodo</a></li>
+                                <li><a href="reportexperiodo.html">Reportes x Periodo</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -474,6 +474,22 @@
                                                     <th class="texttallsmart">CARTERA</th>
                                                 </tr>
                                             </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>54</td>
+                                                    <td>Banco Cencosud</td>
+                                                    <td>Incremental</td>
+                                                    <td>OK</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>2</td>
+                                                    <td>55</td>
+                                                    <td>Banco Cencosud</td>
+                                                    <td>Primera facturacion</td>
+                                                    <td>OK</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -488,7 +504,7 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                var tablecartera = $('#dtCartera').DataTable({
+                var tablecartera = $('#dtCartera1').DataTable({
                     "bDestroy": true,
                     //"paging": false,
                     "searching": false,

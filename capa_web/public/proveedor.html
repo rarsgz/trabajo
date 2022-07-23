@@ -404,27 +404,26 @@
                                 <li><a href="informacion.html">Informacion</a></li>
                             </ul>
                         </li>
-
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Proceso</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Asignar cuenta a asesor</a></li>
-                                <li><a href="projects-dashboard.html">Asignar cartera x resultado</a></li>
+                                <li><a href="cuentaxasesor.html">Asignar cuenta a asesor</a></li>
+                                <li><a href="cuentaxresultado.html">Asignar cartera x resultado</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Importacion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Cartera</a></li>
-                                <li><a href="projects-dashboard.html">Clientes</a></li>
-                                <li><a href="projects-dashboard.html">Direccion</a></li>
-                                <li><a href="projects-dashboard.html">Telefono</a></li>
+                                <li><a href="cartera.html">Cartera</a></li>
+                                <li><a href="cliente.html">Clientes</a></li>
+                                <li><a href="direccion.html">Direccion</a></li>
+                                <li><a href="telefono.html">Telefono</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Reportes</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Reportes x Periodo</a></li>
+                                <li><a href="reportexperiodo.html">Reportes x Periodo</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -479,6 +478,41 @@
                                                     <th class="texttallsmart">OBSERVACION</th>
                                                 </tr>
                                             </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>1</td>
+                                                    <td>Banco Cencosud</td>
+                                                    <td>Juridica</td>
+                                                    <td>RUC</td>
+                                                    <td>9090909099</td>
+                                                    <td>987654321</td>
+                                                    <td></td>
+                                                    <td>Juan</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>2</td>
+                                                    <td>Banco Cencosud-TV</td>
+                                                    <td>Juridica</td>
+                                                    <td>RUC</td>
+                                                    <td>9090909091</td>
+                                                    <td>977654321</td>
+                                                    <td></td>
+                                                    <td>Erick</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>1</td>
+                                                    <td>3</td>
+                                                    <td>Banco Ripley</td>
+                                                    <td>Juridica</td>
+                                                    <td>RUC</td>
+                                                    <td>9490909091</td>
+                                                    <td>967654321</td>
+                                                    <td></td>
+                                                    <td>Ander</td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -493,7 +527,7 @@
 
         <script type="text/javascript">
             $(document).ready(function() {
-                var tableproveedor = $('#dtProveedor').DataTable({
+                var tableproveedor = $('#dtProveedor1').DataTable({
                     "bDestroy": true,
                     //"paging": false,
                     "searching": false,

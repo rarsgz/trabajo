@@ -402,25 +402,32 @@
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Gestion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="projects-dashboard.html">Cobranza</a></li>
-                                <li><a href="projects-dashboard.html">Venta</a></li>
-                                <li><a href="projects-dashboard.html">Informacion</a></li>
+                                <li><a href="cobranza.html">Cobranza</a></li>
+                                <li><a href="cobranza.html">Venta</a></li>
+                                <li><a href="informacion.html">Informacion</a></li>
                             </ul>
                         </li>
 
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Proceso</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
+                                <li><a href="cuentaxasesor.html">Asignar cuenta a asesor</a></li>
+                                <li><a href="cuentaxresultado.html">Asignar cartera x resultado</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Importacion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
+                                <li><a href="cartera.html">Cartera</a></li>
+                                <li><a href="cliente.html">Clientes</a></li>
+                                <li><a href="direccion.html">Direccion</a></li>
+                                <li><a href="telefono.html">Telefono</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Reportes</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
+                                <li><a href="reportexperiodo.html">Reportes x Periodo</a></li>
                             </ul>
                         </li>
                     </ul>
@@ -501,6 +508,13 @@
                                                                     </tr>
                                                                 </thead>
                                                                 <tbody>
+                                                                    <tr>
+                                                                        <td>1</td>
+                                                                        <td>DNI Titular.pdf</td>
+                                                                        <td>Documento 2</td>
+                                                                        <td>12345</td>
+                                                                        <td>Descargar</td>
+                                                                    </tr>
                                                                 </tbody>
                                                             </table>
                                                         </div>
@@ -600,37 +614,63 @@
                         </div>
                         <div class="card-header ">
                         </div>
-                        <h4 class="card-title mb-0 texttallsmart ">Filtros avanzados</h4>
-                        <div class="container texttallsmart ">
-                            <div class="row ">
-                                <div class="col-sm ">Resultado de gestion</div>
-                                <div class="col-sm ">Estatus cartera</div>
-                                <div class="col-sm ">Estatus pago</div>
-                                <div class="col-sm ">Tramo de mora</div>
-                            </div>
-                            <div class="row ">
-                                <div class="col-sm "><select><option value="TODOS ">TODOS</option></select></div>
-                                <div class="col-sm "><select><option value="TODOS ">TODOS</option></select></div>
-                                <div class="col-sm "><select><option value="TODOS ">TODOS</option></select></div>
-                                <div class="col-sm "><select><option value="TODOS ">TODOS</option></select></div>
-                            </div>
-                        </div>
+                        <h4 class="card-title mb-0 texttallsmart ">Historial</h4>
                         <div class="card-body ">
                             <div class="table-responsive ">
                                 <table name="dtClientes " id="dtClientes " class="datatable table table-stripped mb-0 datatables ">
                                     <thead>
                                         <tr>
-                                            <th class="texttallsmart ">RUC/DOC</th>
-                                            <th class="texttallsmart ">NOMBRE</th>
-                                            <th class="texttallsmart ">OPERACION</th>
-                                            <th class="texttallsmart ">CREDITOS.ACTIVOS</th>
-                                            <th class="texttallsmart ">DIAS.MORA</th>
+                                            <th class="texttallsmart ">FECHA.HORA</th>
+                                            <th class="texttallsmart ">TIPO.LLAMADA</th>
+                                            <th class="texttallsmart ">TELEFONO</th>
+                                            <th class="texttallsmart ">RESULTADO</th>
+                                            <th class="texttallsmart ">JUSTIFICACION</th>
+                                            <th class="texttallsmart ">FECHA.PROMESA</th>
                                             <th class="texttallsmart ">MONEDA</th>
-                                            <th class="texttallsmart ">TOTAL.CLIENTE</th>
-                                            <th class="texttallsmart ">ULTIMA.GESTION</th>
-                                            <th class="texttallsmart ">TRAMO.MORA</th>
+                                            <th class="texttallsmart ">IMPORTE</th>
+                                            <th class="texttallsmart ">COMENTARIO</th>
+                                            <th class="texttallsmart ">USUARIO</th>
                                         </tr>
                                     </thead>
+
+                                    <body>
+                                        <tr>
+                                            <th class="texttallsmart ">22/07/2022 08:25 p.m.</th>
+                                            <th class="texttallsmart ">SALIENTE</th>
+                                            <th class="texttallsmart ">987654123</th>
+                                            <th class="texttallsmart ">Ya Pago</th>
+                                            <th class="texttallsmart ">Pago cuota</th>
+                                            <th class="texttallsmart ">21/07/2022</th>
+                                            <th class="texttallsmart ">Dolares</th>
+                                            <th class="texttallsmart ">647.30</th>
+                                            <th class="texttallsmart ">Se confirmo en los sistemas EIG</th>
+                                            <th class="texttallsmart ">Sistema EIG</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="texttallsmart ">20/07/2022 09:25 p.m.</th>
+                                            <th class="texttallsmart ">SALIENTE</th>
+                                            <th class="texttallsmart ">987654123</th>
+                                            <th class="texttallsmart ">Contacto con tercero</th>
+                                            <th class="texttallsmart ">Hermano</th>
+                                            <th class="texttallsmart "></th>
+                                            <th class="texttallsmart "></th>
+                                            <th class="texttallsmart "></th>
+                                            <th class="texttallsmart ">Hermano del titular menciona que no esta en lima pero mañana regresa</th>
+                                            <th class="texttallsmart ">Daniel Meg</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="texttallsmart ">01/03/2022 09:25 a.m.</th>
+                                            <th class="texttallsmart ">SALIENTE</th>
+                                            <th class="texttallsmart ">987654123</th>
+                                            <th class="texttallsmart ">Promesa de pago</th>
+                                            <th class="texttallsmart ">Conyuge</th>
+                                            <th class="texttallsmart ">03/03/2022</th>
+                                            <th class="texttallsmart ">Dolares</th>
+                                            <th class="texttallsmart ">300.50</th>
+                                            <th class="texttallsmart ">Hermano del titular menciona que no esta en lima pero mañana regresa</th>
+                                            <th class="texttallsmart ">Erick Meg</th>
+                                        </tr>
+                                    </body>
                                 </table>
                             </div>
                         </div>
@@ -844,7 +884,7 @@
     <script src="../src/resources/assets/js/sticky.js "></script>
 
     <script>
-        var tbArchivo = $('#dtArchivo').DataTable({
+        var tbArchivo = $('#dtArchivo1').DataTable({
             "bDestroy": true,
             "paging": false,
             "searching": false,
@@ -873,7 +913,7 @@
 
             }
         });
-        var tbencidosxVencer = $('#dtVencidosxVencer').DataTable({
+        var tbencidosxVencer = $('#dtVencidosxVencer1').DataTable({
             "bDestroy": true,
             "paging": false,
             "searching": false,
@@ -902,7 +942,7 @@
 
             }
         });
-        var tbPagosSigo = $('#dtPagosSigo').DataTable({
+        var tbPagosSigo = $('#dtPagosSigo1').DataTable({
             "bDestroy": true,
             "paging": false,
             "searching": false,
