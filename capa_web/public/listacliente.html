@@ -68,6 +68,126 @@
             font-size: 0.7em;
         }
     </style>
+    <!-- Modal -->
+    <div class="modal right fade" id="add_contact" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog" role="document">
+            <button type="button" class="close md-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <!-- Page Header -->
+                    <div class="crms-title row bg-white mb-12">
+                        <div class="col  p-0">
+                            <h3 class="page-title">
+                                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                                  <i class="la la-table"></i>
+                                </span> GESTION CLIENTE</h3>
+                        </div>
+                    </div>
+                    <!-- /Page Header -->
+                </div>
+                <div class="modal-body">
+                    <div class="content container-fluid">
+                        <div class="container">
+                            Codigo:
+                            <br>Numero Documento:
+                            <br>Nombre:
+                            <br>Tipo Persona:
+                        </div>
+
+                        <div class="card-body ">
+                            Cuentas
+                            <div class="table-responsive ">
+                                <table name="dtCuenta" id="dtCuenta" class="datatable table table-stripped mb-0 datatables ">
+                                    <thead>
+                                        <tr>
+                                            <th class="textcoltallsmart ">#</th>
+                                            <th class="textcoltallsmart ">NRO.CUENTA</th>
+                                            <th class="textcoltallsmart ">DIAS.MORA</th>
+                                            <th class="textcoltallsmart ">FEC.VENCIMIENTO</th>
+                                            <th class="textcoltallsmart ">MONEDA</th>
+                                            <th class="textcoltallsmart ">VALOR.MONTO</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            Bitacora
+                            <div class="table-responsive ">
+                                <table name="dtClientes " id="dtClientes " class="datatable table table-stripped mb-0 datatables ">
+                                    <thead>
+                                        <tr>
+                                            <th class="texttallsmart ">FECHA.HORA</th>
+                                            <th class="texttallsmart ">TIPO.LLAMADA</th>
+                                            <th class="texttallsmart ">TELEFONO</th>
+                                            <th class="texttallsmart ">RESULTADO</th>
+                                            <th class="texttallsmart ">JUSTIFICACION</th>
+                                            <th class="texttallsmart ">FECHA.PROMESA</th>
+                                            <th class="texttallsmart ">MONEDA</th>
+                                            <th class="texttallsmart ">IMPORTE</th>
+                                            <th class="texttallsmart ">COMENTARIO</th>
+                                            <th class="texttallsmart ">USUARIO</th>
+                                        </tr>
+                                    </thead>
+
+                                    <body>
+                                        <tr>
+                                            <th class="texttallsmart ">22/07/2022 08:25 p.m.</th>
+                                            <th class="texttallsmart ">SALIENTE</th>
+                                            <th class="texttallsmart ">987654123</th>
+                                            <th class="texttallsmart ">Ya Pago</th>
+                                            <th class="texttallsmart ">Pago cuota</th>
+                                            <th class="texttallsmart ">21/07/2022</th>
+                                            <th class="texttallsmart ">Dolares</th>
+                                            <th class="texttallsmart ">647.30</th>
+                                            <th class="texttallsmart ">Se confirmo en los sistemas EIG</th>
+                                            <th class="texttallsmart ">Sistema EIG</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="texttallsmart ">20/07/2022 09:25 p.m.</th>
+                                            <th class="texttallsmart ">SALIENTE</th>
+                                            <th class="texttallsmart ">987654123</th>
+                                            <th class="texttallsmart ">Contacto con tercero</th>
+                                            <th class="texttallsmart ">Hermano</th>
+                                            <th class="texttallsmart "></th>
+                                            <th class="texttallsmart "></th>
+                                            <th class="texttallsmart "></th>
+                                            <th class="texttallsmart ">Hermano del titular menciona que no esta en lima pero mañana regresa</th>
+                                            <th class="texttallsmart ">Daniel Meg</th>
+                                        </tr>
+                                        <tr>
+                                            <th class="texttallsmart ">01/03/2022 09:25 a.m.</th>
+                                            <th class="texttallsmart ">SALIENTE</th>
+                                            <th class="texttallsmart ">987654123</th>
+                                            <th class="texttallsmart ">Promesa de pago</th>
+                                            <th class="texttallsmart ">Conyuge</th>
+                                            <th class="texttallsmart ">03/03/2022</th>
+                                            <th class="texttallsmart ">Dolares</th>
+                                            <th class="texttallsmart ">300.50</th>
+                                            <th class="texttallsmart ">Hermano del titular menciona que no esta en lima pero mañana regresa</th>
+                                            <th class="texttallsmart ">Erick Meg</th>
+                                        </tr>
+                                    </body>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="card-body ">
+                            Bitacora
+                            <div class="table-responsive ">
+                                <br>Telefono:<select name="" id=""></select>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
 
     <!-- Main Wrapper -->
     <div class="main-wrapper">
@@ -385,7 +505,12 @@
                         <li class="menu-title">
                             <span>Main</span>
                         </li>
-
+                        <li class="submenu">
+                            <a href="#"><i class="feather-home"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+                            <ul class="sub-menus">
+                                <li><a href="principal.html">Dashboard</a></li>
+                            </ul>
+                        </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Administracion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
@@ -399,9 +524,7 @@
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Gestion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="cobranza.html">Cobranza</a></li>
-                                <li><a href="venta.html">Venta</a></li>
-                                <li><a href="informacion.html">Informacion</a></li>
+                                <li><a href="listacliente.html" class="active">Lista de clientes</a></li>
                             </ul>
                         </li>
 
@@ -469,6 +592,7 @@
                                     </div>
                                     <div class="col-sm-2 align-self-center">
                                         <input type="button" class="btn btn-primary" value="Buscar">
+                                        <button class="add btn btn-gradient-primary font-weight-bold text-white todo-list-add-btn btn-rounded" id="add-task" data-toggle="modal" data-target="#add_contact">Agregar Nuevo</button>
                                     </div>
                                 </div>
                                 <div class="card-header">

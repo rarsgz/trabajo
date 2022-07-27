@@ -69,6 +69,99 @@
         }
     </style>
 
+
+    <!-- Modal -->
+    <div class="modal right fade" id="add_contact" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog" role="document">
+            <button type="button" class="close md-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <!-- Page Header -->
+                    <div class="crms-title row bg-white mb-12">
+                        <div class="col  p-0">
+                            <h3 class="page-title">
+                                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                                  <i class="la la-table"></i>
+                                </span> REGISTRO PROVEEDOR</h3>
+                        </div>
+                    </div>
+                    <!-- /Page Header -->
+                </div>
+                <div class="modal-body">
+                    <div class="content container-fluid">
+
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-sm-6">Nombre:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Tipo:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>RUC</option></select> </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Tipo de Doc.:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Nro Documento.:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Telefono:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Departamento:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>LIMA</option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Provincia:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>LIMA</option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Distrito:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>LIMA</option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Contacto:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Observacion:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Estado:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>ACTIVO</option></select></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="button" value="Actualizar" onclick="window.location='proveedor.html';">
+                            <input type="button" value="Regresar " onclick="window.location='proveedor.html' ; ">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
+
+
+
     <!-- Main Wrapper -->
     <div class="main-wrapper">
 
@@ -385,12 +478,17 @@
                         <li class="menu-title">
                             <span>Main</span>
                         </li>
-
+                        <li class="submenu">
+                            <a href="#"><i class="feather-home"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+                            <ul class="sub-menus">
+                                <li><a href="principal.html">Dashboard</a></li>
+                            </ul>
+                        </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Administracion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
 
-                                <li><a href="proveedor.html">Proveedor</a></li>
+                                <li><a href="proveedor.html" class="active">Proveedor</a></li>
                                 <li><a href="cartera.html">Cartera</a></li>
                                 <li><a href="usuario.html">Usuarios</a></li>
                             </ul>
@@ -399,9 +497,7 @@
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Gestion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="cobranza.html">Cobranza</a></li>
-                                <li><a href="venta.html">Venta</a></li>
-                                <li><a href="informacion.html">Informacion</a></li>
+                                <li><a href="listacliente.html">Lista de clientes</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -460,8 +556,8 @@
 
                             <div class="container">
 
-                                <input type="button" value="Agregar Nuevo" onclick="window.location='registro_proveedor.html';">
-
+                                <!--<input type="button" value="Agregar Nuevo" onclick="window.location='registro_proveedor.html';">-->
+                                <button class="add btn btn-gradient-primary font-weight-bold text-white todo-list-add-btn btn-rounded" id="add-task" data-toggle="modal" data-target="#add_contact">Agregar Nuevo</button>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table name="dtProveedor" id="dtProveedor" class="datatable table table-stripped mb-0 datatables">

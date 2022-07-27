@@ -8,7 +8,7 @@
     <meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, management, minimal, modern, accounts, invoice, html5, responsive, CRM, Projects">
     <meta name="author" content="Dreamguys - Bootstrap Admin Template">
     <meta name="robots" content="noindex, nofollow">
-    <title> Prueba</title>
+    <title>Dashboard - CRMS admin template</title>
 
     <!-- Favicon -->
     <link rel="shortcut icon" type="image/x-icon" href="../src/resources/assets/img/favicon.png">
@@ -28,14 +28,8 @@
     <!-- Lineawesome CSS -->
     <link rel="stylesheet" href="../src/resources/assets/css/line-awesome.min.css">
 
-    <!-- Select2 CSS -->
-    <link rel="stylesheet" href="../src/resources/assets/css/select2.min.css">
-
-    <!-- Datetimepicker CSS -->
-    <link rel="stylesheet" href="../src/resources/assets/css/bootstrap-datetimepicker.min.css">
-
-    <!-- Datatable CSS -->
-    <link rel="stylesheet" href="../src/resources/assets/css/dataTables.bootstrap4.min.css">
+    <!-- Chart CSS -->
+    <link rel="stylesheet" href="../src/resources/assets/plugins/morris/morris.css">
 
     <!-- Theme CSS -->
     <link rel="stylesheet" href="../src/resources/assets/css/theme-settings.css">
@@ -44,32 +38,14 @@
     <link rel="stylesheet" href="../src/resources/assets/css/style.css">
 
 
-    <script src="../src/resources/assets/js/jquery-3.5.0.min.js" type="text/javascript"></script>
-    <script src="../src/resources/assets/js/jquery-ui.min.js" type="text/javascript"></script>
-
-    <script src="../src/resources/assets/js/jquery.dataTables.min.js" type="text/javascript"></script>
-    <script src="../src/resources/assets/js/popper.min.js" type="text/javascript"></script>
-    <script src="../src/resources/assets/js/bootstrap.min.js" type="text/javascript"></script>
-    <script src="../src/resources/assets/js/jquery.slimscroll.min.js" type="text/javascript"></script>
-
-    <link rel="import" href="administracion/usuario.html" id="usuario">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+			<script src="../src/resources/assets/js/html5shiv.min.js"></script>
+			<script src="../src/resources/assets/js/respond.min.js"></script>
+		<![endif]-->
 </head>
 
-<body id="skin-color" class="inter">
-    <style>
-        .texttallsmart {
-            font-size: 0.7em;
-        }
-        
-        table.dataTable td {
-            font-size: 0.7em;
-        }
-        
-        table.dataTable tr.dtrg-level-0 td {
-            font-size: 0.7em;
-        }
-    </style>
-
+<body id="skin-color" class="skin-color inter">
     <!-- Main Wrapper -->
     <div class="main-wrapper">
 
@@ -156,8 +132,8 @@
                                     <a href="activities.html">
                                         <div class="media">
                                             <span class="avatar">
-                                                <img alt="" src="../src/resources/assets/img/profiles/avatar-02.jpg">
-                                            </span>
+													<img alt="" src="../src/resources/assets/img/profiles/avatar-02.jpg">
+												</span>
                                             <div class="media-body">
                                                 <p class="noti-details"><span class="noti-title">John Doe</span> added new task <span class="noti-title">Patient appointment booking</span></p>
                                                 <p class="noti-time"><span class="notification-time">4 mins ago</span></p>
@@ -169,8 +145,8 @@
                                     <a href="activities.html">
                                         <div class="media">
                                             <span class="avatar">
-                                                <img alt="" src="../src/resources/assets/img/profiles/avatar-03.jpg">
-                                            </span>
+													<img alt="" src="../src/resources/assets/img/profiles/avatar-03.jpg">
+												</span>
                                             <div class="media-body">
                                                 <p class="noti-details"><span class="noti-title">Tarah Shropshire</span> changed the task name <span class="noti-title">Appointment booking with payment gateway</span></p>
                                                 <p class="noti-time"><span class="notification-time">6 mins ago</span></p>
@@ -182,8 +158,8 @@
                                     <a href="activities.html">
                                         <div class="media">
                                             <span class="avatar">
-                                                <img alt="" src="../src/resources/assets/img/profiles/avatar-06.jpg">
-                                            </span>
+													<img alt="" src="../src/resources/assets/img/profiles/avatar-06.jpg">
+												</span>
                                             <div class="media-body">
                                                 <p class="noti-details"><span class="noti-title">Misty Tison</span> added <span class="noti-title">Domenic Houston</span> and <span class="noti-title">Claire Mapes</span> to project <span class="noti-title">Doctor available module</span></p>
                                                 <p class="noti-time"><span class="notification-time">8 mins ago</span></p>
@@ -195,8 +171,8 @@
                                     <a href="activities.html">
                                         <div class="media">
                                             <span class="avatar">
-                                                <img alt="" src="../src/resources/assets/img/profiles/avatar-17.jpg">
-                                            </span>
+													<img alt="" src="../src/resources/assets/img/profiles/avatar-17.jpg">
+												</span>
                                             <div class="media-body">
                                                 <p class="noti-details"><span class="noti-title">Rolland Webber</span> completed task <span class="noti-title">Patient and Doctor video conferencing</span></p>
                                                 <p class="noti-time"><span class="notification-time">12 mins ago</span></p>
@@ -208,8 +184,8 @@
                                     <a href="activities.html">
                                         <div class="media">
                                             <span class="avatar">
-                                                <img alt="" src="../src/resources/assets/img/profiles/avatar-13.jpg">
-                                            </span>
+													<img alt="" src="../src/resources/assets/img/profiles/avatar-13.jpg">
+												</span>
                                             <div class="media-body">
                                                 <p class="noti-details"><span class="noti-title">Bernardo Galaviz</span> added new task <span class="noti-title">Private chat module</span></p>
                                                 <p class="noti-time"><span class="notification-time">2 days ago</span></p>
@@ -243,8 +219,8 @@
                                         <div class="list-item">
                                             <div class="list-left">
                                                 <span class="avatar">
-                                                    <img alt="" src="../src/resources/assets/img/profiles/avatar-09.jpg">
-                                                </span>
+														<img alt="" src="../src/resources/assets/img/profiles/avatar-09.jpg">
+													</span>
                                             </div>
                                             <div class="list-body">
                                                 <span class="message-author">Richard Miles </span>
@@ -260,8 +236,8 @@
                                         <div class="list-item">
                                             <div class="list-left">
                                                 <span class="avatar">
-                                                    <img alt="" src="../src/resources/assets/img/profiles/avatar-02.jpg">
-                                                </span>
+														<img alt="" src="../src/resources/assets/img/profiles/avatar-02.jpg">
+													</span>
                                             </div>
                                             <div class="list-body">
                                                 <span class="message-author">John Doe</span>
@@ -277,8 +253,8 @@
                                         <div class="list-item">
                                             <div class="list-left">
                                                 <span class="avatar">
-                                                    <img alt="" src="../src/resources/assets/img/profiles/avatar-03.jpg">
-                                                </span>
+														<img alt="" src="../src/resources/assets/img/profiles/avatar-03.jpg">
+													</span>
                                             </div>
                                             <div class="list-body">
                                                 <span class="message-author"> Tarah Shropshire </span>
@@ -294,8 +270,8 @@
                                         <div class="list-item">
                                             <div class="list-left">
                                                 <span class="avatar">
-                                                    <img alt="" src="../src/resources/assets/img/profiles/avatar-05.jpg">
-                                                </span>
+														<img alt="" src="../src/resources/assets/img/profiles/avatar-05.jpg">
+													</span>
                                             </div>
                                             <div class="list-body">
                                                 <span class="message-author">Mike Litorus</span>
@@ -311,8 +287,8 @@
                                         <div class="list-item">
                                             <div class="list-left">
                                                 <span class="avatar">
-                                                    <img alt="" src="../src/resources/assets/img/profiles/avatar-08.jpg">
-                                                </span>
+														<img alt="" src="../src/resources/assets/img/profiles/avatar-08.jpg">
+													</span>
                                             </div>
                                             <div class="list-body">
                                                 <span class="message-author"> Catherine Manseau </span>
@@ -335,7 +311,7 @@
                 <li class="nav-item dropdown has-arrow main-drop">
                     <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
                         <span class="user-img"><img src="../src/resources/assets/img/profiles/avatar-21.jpg" alt="">
-                        <span class="status online"></span></span>
+							<span class="status online"></span></span>
                         <span>Admin</span>
                     </a>
                     <div class="dropdown-menu">
@@ -369,6 +345,7 @@
                     <button class="btn" type="button"><i class="fa fa-search"></i></button>
                 </form>
                 <div id="sidebar-menu" class="sidebar-menu">
+
                     <ul>
                         <li class="nav-item nav-profile">
                             <a href="#" class="nav-link">
@@ -388,6 +365,13 @@
                         </li>
 
                         <li class="submenu">
+                            <a href="#"><i class="feather-home"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+                            <ul class="sub-menus">
+                                <li><a href="principal.html" class="active">Dashboard</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Administracion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
 
@@ -400,9 +384,7 @@
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Gestion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="cobranza.html">Cobranza</a></li>
-                                <li><a href="venta.html">Venta</a></li>
-                                <li><a href="informacion.html">Informacion</a></li>
+                                <li><a href="listacliente.html">Lista de clientes</a></li>
                             </ul>
                         </li>
                         <li class="submenu">
@@ -427,6 +409,11 @@
                                 <li><a href="reportexperiodo.html">Reportes x Periodo</a></li>
                             </ul>
                         </li>
+
+
+
+
+
                     </ul>
                 </div>
             </div>
@@ -434,218 +421,331 @@
         <!-- /Sidebar -->
 
         <!-- Page Wrapper -->
-        <script>
-            //accedo al elemento import con id=miimport
-            var importado = document.querySelector("#usuario");
+        <div class="page-wrapper">
+            <div class="content container-fluid">
 
-            //accedo al contenido del import
-            var contenidoImport = importado.import;
-
-            //accedo a un elemento en concreto del contenido del import
-            var elementoDentroImport = contenidoImport.querySelector("pata-page-wrapper");
-
-            //inyecto ese contenido del import en la página
-            document.body.appendChild(elementoDentroImport);
-        </script>
-
-
-        <!-- /Page Wrapper -->
-
-        <!--theme settings modal-->
-
-        <div class="modal right fade settings" id="settings" role="dialog" aria-modal="true">
-            <div class="toggle-close">
-                <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+                <!-- Page Header -->
+                <div class="crms-title row bg-white mb-4">
+                    <div class="col">
+                        <h3 class="page-title">
+                            <span class="page-title-icon bg-gradient-primary text-white mr-2">
+			                  <i class="la la-table"></i>
+			                </span> <span>Deals Dashboard</span></h3>
+                    </div>
+                    <div class="col text-right">
+                        <ul class="breadcrumb bg-white float-right m-0 pl-0 pr-0">
+                            <li class="breadcrumb-item"><a href="index.html">Dashboard</a></li>
+                            <li class="breadcrumb-item active">Deals Dashboard</li>
+                        </ul>
+                    </div>
                 </div>
 
-            </div>
-            <div class="modal-dialog" role="document">
-                <div class="modal-content">
+                <!-- /Page Header -->
 
-                    <div class="modal-header p-3">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                        <h4 class="modal-title" id="myModalLabel2">Settings</h4>
+                <div class="row graphs">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Total Lead</h3>
+                                <canvas id="pie-chart" width="800" height="450"></canvas>
+                            </div>
+                        </div>
                     </div>
-
-                    <div class="modal-body pb-3">
-                        <div class="scroll">
-
-                            <div>
-
-
-
-
-                                <ul class="list-group">
-                                    <li class="list-group-item border-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="pb-2">Primary Skin</h5>
-                                            </div>
-                                            <div class="col text-right">
-                                                <a class="reset text-white bg-dark" id="ChangeprimaryDefault">Reset Default</a>
-                                            </div>
-                                        </div>
-                                        <div class="theme-settings-swatches">
-                                            <div class="themes">
-                                                <div class="themes-body">
-                                                    <ul id="theme-change" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
-                                                        <li class="theme-title">Solid Color</li>
-                                                        <li class="list-inline-item"><span class="theme-solid-black bg-black"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-solid-pink bg-primary"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-solid-orange bg-secondary1"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-solid-purple bg-success"></span></li>
-                                                        <!-- <li class="list-inline-item"><span class="theme-solid-blue bg-info"></span></li> -->
-                                                        <li class="list-inline-item"><span class="theme-solid-green bg-warnings"></span></li>
-                                                        <li><br /></li>
-                                                        <li>
-                                                            <hr />
-                                                        </li>
-
-                                                        <li class="theme-title">Gradient Color</li>
-
-
-                                                        <li class="list-inline-item"><span class="theme-orange bg-sunny-morning"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-blue bg-tempting-azure"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-grey bg-amy-crisp"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-lgrey bg-mean-fruit"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-dblue bg-malibu-beach"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-pink bg-ripe-malin"></span></li>
-                                                        <li class="list-inline-item"><span class="theme-purple bg-plum-plate"></span></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-
-                                        </div>
-                                    </li>
-                                </ul>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Products Yearly Sales</h3>
+                                <canvas id="bar-chart-horizontal" width="800" height="450"></canvas>
                             </div>
-
-                            <div>
-                                <ul class="list-group">
-                                    <li class="list-group-item border-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="pb-2">Header Style</h5>
-                                            </div>
-                                            <div class="col text-right">
-                                                <a class="reset text-white bg-dark" id="ChageheaderDefault">Reset Default</a>
-                                            </div>
-                                        </div>
-                                        <div class="theme-settings-swatches">
-                                            <div class="themes">
-                                                <div class="themes-body">
-                                                    <ul id="theme-change1" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
-                                                        <li class="theme-title">Solid Color</li>
-                                                        <li class="list-inline-item"><span class="header-solid-black bg-black"></span></li>
-                                                        <li class="list-inline-item"><span class="header-solid-pink bg-primary"></span></li>
-                                                        <li class="list-inline-item"><span class="header-solid-orange bg-secondary1"></span></li>
-                                                        <li class="list-inline-item"><span class="header-solid-purple bg-success"></span></li>
-                                                        <!-- <li class="list-inline-item"><span class="header-solid-blue bg-info"></span></li> -->
-                                                        <li class="list-inline-item"><span class="header-solid-green bg-warnings"></span></li>
-                                                        <li><br /></li>
-                                                        <li>
-                                                            <hr />
-                                                        </li>
-
-                                                        <li class="theme-title">Gradient Color</li>
-
-                                                        <li class="list-inline-item"><span class="header-gradient-color1 bg-sunny-morning"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color2 bg-tempting-azure"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color3 bg-amy-crisp"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color4 bg-mean-fruit"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color5 bg-malibu-beach"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color6 bg-ripe-malin"></span></li>
-                                                        <li class="list-inline-item"><span class="header-gradient-color7 bg-plum-plate"></span></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="row graphs">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Sales Overview</h3>
+                                <div id="line-charts"></div>
                             </div>
-                            <div>
-                                <ul class="list-group m-0">
-                                    <li class="list-group-item border-0">
-                                        <div class="row">
-                                            <div class="col">
-                                                <h5 class="pb-2">Apps Sidebar Style</h5>
-                                            </div>
-                                            <div class="col  text-right">
-                                                <a class="reset text-white bg-dark" id="ChagesidebarDefault">Reset Default</a>
-                                            </div>
-                                        </div>
-                                        <div class="theme-settings-swatches">
-                                            <div class="themes">
-                                                <div class="themes-body">
-                                                    <ul id="theme-change2" class="theme-colors border-0 list-inline-item list-unstyled">
-                                                        <li class="theme-title">Solid Color</li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-black bg-black"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-pink bg-primary"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-orange bg-secondary1"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-solid-purple bg-success"></span></li>
-                                                        <!-- <li class="list-inline-item"><span class="sidebar-solid-blue bg-info"></span></li> -->
-                                                        <li class="list-inline-item"><span class="sidebar-solid-green bg-warnings"></span></li>
-                                                        <li><br /></li>
-                                                        <li>
-                                                            <hr />
-                                                        </li>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
 
-                                                        <li class="theme-title">Gradient Color</li>
-
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color1 bg-sunny-morning"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color2 bg-tempting-azure"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color3 bg-amy-crisp"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color4 bg-mean-fruit"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color5 bg-malibu-beach"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color6 bg-ripe-malin"></span></li>
-                                                        <li class="list-inline-item"><span class="sidebar-gradient-color7 bg-plum-plate"></span></li>
-
-                                                    </ul>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </li>
-                                </ul>
-                                <div class="row Default-font">
-                                    <div class="col">
-                                        <h5 class="pb-2">Font Style</h5>
-                                    </div>
-                                    <div class="col text-right">
-                                        <a class="reset text-white bg-dark font-Default" onclick="ChangeFontDefault()">Reset Default</a>
-                                    </div>
-                                </div>
-                                <ul class="list-inline-item list-unstyled font-family border-0 p-0">
-
-                                    <li class="list-inline-item roboto-font" onclick="changeFonts1();">Roboto</li>
-                                    <li class="list-inline-item poppins-font" onclick="changeFonts2();">Poppins</li>
-                                    <li class="list-inline-item montserrat-font" onclick="changeFonts3();">Montserrat</li>
-                                    <li class="list-inline-item inter-font" onclick="changeFonts4();">Inter</li>
-                                </ul>
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Total Sales</h3>
+                                <div id="chart"></div>
                             </div>
-
+                        </div>
+                    </div>
+                </div>
+                <div class="row graphs">
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Yearly Projects</h3>
+                                <canvas id="bar-chart" width="800" height="550"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Total Revenue</h3>
+                                <div id="bar-charts"></div>
+                            </div>
                         </div>
                     </div>
 
                 </div>
+
+                <div class="row graphs">
+                    <div class="col-md-6 mb-0">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Sales Statistics</h3>
+                                <canvas id="bar-chart-grouped" width="800" height="450"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-0">
+                        <div class="card h-100">
+                            <div class="card-body">
+                                <h3 class="card-title">Completed Tasks</h3>
+                                <canvas id="mixed-chart" width="800" height="450"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
             </div>
         </div>
+        <!-- /Page Wrapper -->
 
-        <!--theme settings-->
-        <div class="sidebar-contact">
-            <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i></div>
+    </div>
+    <!-- /Main Wrapper -->
+
+
+    <!--theme settings modal-->
+
+    <div class="modal right fade settings" id="settings" role="dialog" aria-modal="true">
+        <div class="toggle-close">
+            <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i>
+            </div>
 
         </div>
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
 
-        <!-- Slimscroll JS -->
+                <div class="modal-header p-3">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel2">Settings</h4>
+                </div>
 
-        <!-- Custom JS -->
-        <script src="../src/resources/assets/js/app.js"></script>
-        <script src="../src/resources/assets/js/sticky.js"></script>
+                <div class="modal-body pb-3">
+                    <div class="scroll">
+
+                        <div>
+
+
+
+
+                            <ul class="list-group">
+                                <li class="list-group-item border-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="pb-2">Primary Skin</h5>
+                                        </div>
+                                        <div class="col text-right">
+                                            <a class="reset text-white bg-dark" id="ChangeprimaryDefault">Reset Default</a>
+                                        </div>
+                                    </div>
+                                    <div class="theme-settings-swatches">
+                                        <div class="themes">
+                                            <div class="themes-body">
+                                                <ul id="theme-change" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
+                                                    <li class="theme-title">Solid Color</li>
+                                                    <li class="list-inline-item"><span class="theme-solid-black bg-black"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-solid-pink bg-primary"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-solid-orange bg-secondary1"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-solid-purple bg-success"></span></li>
+                                                    <!-- <li class="list-inline-item"><span class="theme-solid-blue bg-info"></span></li> -->
+                                                    <li class="list-inline-item"><span class="theme-solid-green bg-warnings"></span></li>
+                                                    <li><br /></li>
+                                                    <li>
+                                                        <hr />
+                                                    </li>
+
+                                                    <li class="theme-title">Gradient Color</li>
+
+
+                                                    <li class="list-inline-item"><span class="theme-orange bg-sunny-morning"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-blue bg-tempting-azure"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-grey bg-amy-crisp"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-lgrey bg-mean-fruit"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-dblue bg-malibu-beach"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-pink bg-ripe-malin"></span></li>
+                                                    <li class="list-inline-item"><span class="theme-purple bg-plum-plate"></span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <ul class="list-group">
+                                <li class="list-group-item border-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="pb-2">Header Style</h5>
+                                        </div>
+                                        <div class="col text-right">
+                                            <a class="reset text-white bg-dark" id="ChageheaderDefault">Reset Default</a>
+                                        </div>
+                                    </div>
+                                    <div class="theme-settings-swatches">
+                                        <div class="themes">
+                                            <div class="themes-body">
+                                                <ul id="theme-change1" class="theme-colors border-0 list-inline-item list-unstyled mb-0">
+                                                    <li class="theme-title">Solid Color</li>
+                                                    <li class="list-inline-item"><span class="header-solid-black bg-black"></span></li>
+                                                    <li class="list-inline-item"><span class="header-solid-pink bg-primary"></span></li>
+                                                    <li class="list-inline-item"><span class="header-solid-orange bg-secondary1"></span></li>
+                                                    <li class="list-inline-item"><span class="header-solid-purple bg-success"></span></li>
+                                                    <!-- <li class="list-inline-item"><span class="header-solid-blue bg-info"></span></li> -->
+                                                    <li class="list-inline-item"><span class="header-solid-green bg-warnings"></span></li>
+                                                    <li><br /></li>
+                                                    <li>
+                                                        <hr />
+                                                    </li>
+
+                                                    <li class="theme-title">Gradient Color</li>
+
+                                                    <li class="list-inline-item"><span class="header-gradient-color1 bg-sunny-morning"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color2 bg-tempting-azure"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color3 bg-amy-crisp"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color4 bg-mean-fruit"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color5 bg-malibu-beach"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color6 bg-ripe-malin"></span></li>
+                                                    <li class="list-inline-item"><span class="header-gradient-color7 bg-plum-plate"></span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul class="list-group m-0">
+                                <li class="list-group-item border-0">
+                                    <div class="row">
+                                        <div class="col">
+                                            <h5 class="pb-2">Apps Sidebar Style</h5>
+                                        </div>
+                                        <div class="col  text-right">
+                                            <a class="reset text-white bg-dark" id="ChagesidebarDefault">Reset Default</a>
+                                        </div>
+                                    </div>
+                                    <div class="theme-settings-swatches">
+                                        <div class="themes">
+                                            <div class="themes-body">
+                                                <ul id="theme-change2" class="theme-colors border-0 list-inline-item list-unstyled">
+                                                    <li class="theme-title">Solid Color</li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-black bg-black"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-pink bg-primary"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-orange bg-secondary1"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-solid-purple bg-success"></span></li>
+                                                    <!-- <li class="list-inline-item"><span class="sidebar-solid-blue bg-info"></span></li> -->
+                                                    <li class="list-inline-item"><span class="sidebar-solid-green bg-warnings"></span></li>
+                                                    <li><br /></li>
+                                                    <li>
+                                                        <hr />
+                                                    </li>
+
+                                                    <li class="theme-title">Gradient Color</li>
+
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color1 bg-sunny-morning"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color2 bg-tempting-azure"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color3 bg-amy-crisp"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color4 bg-mean-fruit"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color5 bg-malibu-beach"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color6 bg-ripe-malin"></span></li>
+                                                    <li class="list-inline-item"><span class="sidebar-gradient-color7 bg-plum-plate"></span></li>
+
+                                                </ul>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="row Default-font">
+                                <div class="col">
+                                    <h5 class="pb-2">Font Style</h5>
+                                </div>
+                                <div class="col text-right">
+                                    <a class="reset text-white bg-dark font-Default">Reset Default</a>
+                                </div>
+                            </div>
+                            <ul class="list-inline-item list-unstyled font-family border-0 p-0">
+
+                                <li class="list-inline-item roboto-font">Roboto</li>
+                                <li class="list-inline-item poppins-font">Poppins</li>
+                                <li class="list-inline-item montserrat-font">Montserrat</li>
+                                <li class="list-inline-item inter-font">Inter</li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!--theme settings-->
+    <div class="sidebar-contact">
+        <div class="toggle" data-toggle="modal" data-target="#settings"><i class="fa fa-cog fa-w-16 fa-spin fa-2x"></i></div>
+
+    </div>
+
+
+
+    <!-- jQuery -->
+    <script src="../src/resources/assets/js/jquery-3.5.0.min.js"></script>
+
+    <!-- Bootstrap Core JS -->
+    <script src="../src/resources/assets/js/popper.min.js"></script>
+    <script src="../src/resources/assets/js/bootstrap.min.js"></script>
+
+    <!-- Slimscroll JS -->
+    <script src="../src/resources/assets/js/jquery.slimscroll.min.js"></script>
+
+
+    <!-- Chart JS -->
+    <script src="../src/resources/assets/js/morris.js"></script>
+
+    <script src="../src/resources/assets/plugins/raphael/raphael.min.js"></script>
+    <script src="../src/resources/assets/js/chart.js"></script>
+    <script src="../src/resources/assets/js/linebar.min.js"></script>
+    <script src="../src/resources/assets/js/piechart.js"></script>
+    <script src="../src/resources/assets/js/apex.min.js"></script>
+
+    <!-- theme JS -->
+    <script src="../src/resources/assets/js/theme-settings.js"></script>
+
+    <!-- Custom JS -->
+    <script src="../src/resources/assets/js/app.js"></script>
+
+
 </body>
 
 </html>

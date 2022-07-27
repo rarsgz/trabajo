@@ -68,7 +68,140 @@
             font-size: 0.7em;
         }
     </style>
+    <!-- Modal -->
+    <div class="modal right fade" id="add_contact" tabindex="-1" role="dialog" aria-modal="true">
+        <div class="modal-dialog" role="document">
+            <button type="button" class="close md-close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <div class="modal-content">
 
+                <div class="modal-header">
+                    <!-- Page Header -->
+                    <div class="crms-title row bg-white mb-12">
+                        <div class="col  p-0">
+                            <h3 class="page-title">
+                                <span class="page-title-icon bg-gradient-primary text-white mr-2">
+                                  <i class="la la-table"></i>
+                                </span> REGISTRO USUARIOS</h3>
+                        </div>
+                    </div>
+                    <!-- /Page Header -->
+                </div>
+                <div class="modal-body">
+                    <div class="content container-fluid">
+                        <div class="col">
+                            <div class="row">
+                                <div class="col-sm-6">Apellidos, Nombres:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Tipo de Doc:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>DNI</option><option>RUC</option></select> </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">N° Documento:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Fecha de Nac.:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""> <input type="button" value="..."></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Domicilio:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Departamento:</div>
+                                <div class="col-sm-6"><select name="" id="">
+                                    <option>LIMA</option></select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Provincia:</div>
+                                <div class="col-sm-6"><select name="" id="">
+                                    <option>LIMA</option></select>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Distrito:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>LIMA</option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Telefono:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">E-mail:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Fecha de ingreso:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""> <input type="button" value="..."></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Nivel:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>ADMINISTRADOR</option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Proveedor:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>Banco Cencosud</option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Cartera:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>Primera facturacion</option></select> </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Estado:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>ACTIVO</option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Empresa:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>EMPRESA1/option></select></div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-sm-6">Modalidad:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>Prueba</option></select></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">Turno:</div>
+                                <div class="col-sm-6"><select name="" id=""><option>MAÑANA</option></select></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">Horario S.:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+                            <div class="row">
+                                <div class="col-sm-6">Horario L-V:</div>
+                                <div class="col-sm-6"><input type="text" name="" id=""></div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <input type="button" value="Actualizar" onclick="window.location='usuario.html';">
+                            <input type="button" value="Regresar" onclick="window.location='usuario.html';">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- modal-content -->
+        </div>
+        <!-- modal-dialog -->
+    </div>
+    <!-- modal -->
     <!-- Main Wrapper -->
     <div class="main-wrapper">
 
@@ -385,23 +518,26 @@
                         <li class="menu-title">
                             <span>Main</span>
                         </li>
-
+                        <li class="submenu">
+                            <a href="#"><i class="feather-home"></i> <span> Dashboard</span> <span class="menu-arrow"></span></a>
+                            <ul class="sub-menus">
+                                <li><a href="principal.html">Dashboard</a></li>
+                            </ul>
+                        </li>
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Administracion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
 
                                 <li><a href="proveedor.html">Proveedor</a></li>
                                 <li><a href="cartera.html">Cartera</a></li>
-                                <li><a href="usuario.html">Usuarios</a></li>
+                                <li><a href="usuario.html" class="active">Usuarios</a></li>
                             </ul>
                         </li>
 
                         <li class="submenu">
                             <a href="#"><i class="feather-home"></i> <span> Gestion</span> <span class="menu-arrow"></span></a>
                             <ul class="sub-menus">
-                                <li><a href="cobranza.html">Cobranza</a></li>
-                                <li><a href="venta.html">Venta</a></li>
-                                <li><a href="informacion.html">Informacion</a></li>
+                                <li><a href="listacliente.html">Lista de clientes</a></li>
                             </ul>
                         </li>
 
@@ -461,8 +597,8 @@
 
                             <div class="container">
 
-                                <input type="button" value="Registrar" onclick="window.location='registro_usuario.html';">
-
+                                <!--<input type="button" value="Registrar" onclick="window.location='registro_usuario.html';">-->
+                                <button class="add btn btn-gradient-primary font-weight-bold text-white todo-list-add-btn btn-rounded" id="add-task" data-toggle="modal" data-target="#add_contact">Agregar Nuevo</button>
                                 <div class="card-body">
                                     <div class="table-responsive">
                                         <table name="dtUsuarios" id="dtUsuarios" class="datatable table table-stripped mb-0 datatables">
@@ -477,7 +613,7 @@
                                                 </tr>
                                             </thead>
                                             <tbody>
-                                                <!--
+
                                                 <tr>
                                                     <th class="texttallsmart">1</th>
                                                     <th class="texttallsmart">20</th>
@@ -502,7 +638,7 @@
                                                     <th class="texttallsmart">1</th>
                                                     <th class="texttallsmart">Inactivo</th>
                                                 </tr>
--->
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -516,7 +652,7 @@
         <!-- /Page Wrapper -->
         <script type="text/javascript">
             $(document).ready(function() {
-                var tableusuario = $('#dtUsuarios').DataTable({
+                var tableusuario = $('#dtUsuarios1').DataTable({
                     "bDestroy": true,
                     //"paging": false,
                     "searching": false,
@@ -542,7 +678,7 @@
                     },
                     "searching": false,
                     "ajax": {
-                        "url": "http://192.168.0.120/usuarios.php",
+                        "url": "http://10.13.3.120/usuarios.php",
                         //"url": "http://localhost:81/trabajo/capa_api/usuarios.php",
                         "type": "GET",
                         "dataSrc": "",
